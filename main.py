@@ -177,7 +177,7 @@ def getUser(userid):
         'userid': userid,
         'myid': 25908333,
         'fnname': 'getuserprofile',
-        'Token': '31026173|3598caba9c29c6885b4bface747d09add56b6e698f71c6e8b5370fcde5694d22dfff11367184805ddfec010817c182ba024e25397eb69e9c956094994dc09291'
+        'Token': '31060372|9dc623dc3010a9880900912e0c2dda97a6733fec22685890e895c4fb84cd30f7265f0efb76edff38c97fd4183c2e225da55aa11f7338cd335c1915dd38ccb0b1'
     }
     try:
         r = post('http://ir-android.com//joke_city/v29/index.php', data=data, timeout=5)
@@ -282,4 +282,5 @@ async def getInformation2(key: str):
 async def getNagentAndUsername(key: str):
     if not compare_digest(key, KEY):
         return {'ok': False}
+
     return {'result': get_uh()}
